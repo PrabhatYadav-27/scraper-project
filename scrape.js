@@ -25,6 +25,10 @@ const puppeteer = require('puppeteer');
 
     const data = await page.evaluate(() => {
         const title = document.title;
-        let heading = document.querySelector('h1')?.innerText || 'No Heading Found'
-    })
-})
+        let heading = document.querySelector('h1')?.innerText || 'No Heading Found';
+        return {title, heading};
+    });
+
+    fs.writeFileSync('scraped_data.json', JSON.stringify(data));
+    await browser.close();
+})();
