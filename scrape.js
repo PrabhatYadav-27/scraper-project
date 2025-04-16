@@ -32,3 +32,6 @@ const puppeteer = require('puppeteer');
     fs.writeFileSync('scraped_data.json', JSON.stringify(data));
     await browser.close();
 })();
+
+// for bash export SCRAPE_URL = "https://url"
+//run the nodejs file
