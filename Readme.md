@@ -26,18 +26,17 @@ as **Docker Image**.
     - run  `npm install puppeteer`
 
 ### To set the environmental variable
+ **for cmd**
+  
+  `set SCRAPE_URL=https://wikipedia.org`
 
-     1.for cmd
+**for powershell**
+ 
+  `$env:SCRAPE_URL="https://wikipedia.org"`
 
-    - `set SCRAPE_URL=https://wikipedia.org`
+**for cmd**
 
-     **for powershell**
-
-    - `$env:SCRAPE_URL="https://wikipedia.org"`
-
-    **for cmd**
-
-    - `export SCRAPE_URL="https://wikipedia.org" `
+  `export SCRAPE_URL="https://wikipedia.org" `
 
 ### To run the scrape.js
 - `node scrape.js` 
