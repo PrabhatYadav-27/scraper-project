@@ -2,12 +2,13 @@ const fs = require('fs');
 const puppeteer = require('puppeteer');
 
 (async ()=>{
-    const url = process.env.SCRAPE_URL || 'https://example.com'
+    const url = process.env.SCRAPE_URL || 'https://wikipedia.com'
     console.log(`Using url:  ${url}`); //log the url being used
 
     const browser = await puppeteer.launch({
         headles: true,
-        args: ['--no-sandbox']
+        executablePath: '/usr/bin/chromium', // Make sure this path is correct
+        args: ['--no-sandbox', '--disable-setuid-sandbox']
     });
 
     //open in new page
