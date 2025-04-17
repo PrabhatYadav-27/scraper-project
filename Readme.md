@@ -26,15 +26,16 @@ as **Docker Image**.
     - run  `npm install puppeteer`
 
 ### To set the environmental variable
+
  **for cmd**
   
-  - `set SCRAPE_URL=https://wikipedia.org`
+   - run `set SCRAPE_URL=https://wikipedia.org`
 
 **for powershell**
  
   - `$env:SCRAPE_URL="https://wikipedia.org"`
 
-**for cmd**
+**for bash**
 
   - `export SCRAPE_URL="https://wikipedia.org" `
 
@@ -43,3 +44,4 @@ as **Docker Image**.
 
 ### To run the Flask server
  - `python server.py`
+
