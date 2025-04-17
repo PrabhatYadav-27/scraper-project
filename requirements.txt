@@ -1,0 +1,5 @@
+Flask
+
+
+# if you re going to use this file run 
+# pip install -r requirements.txt
