@@ -33,15 +33,31 @@ as **Docker Image**.
 
 **for powershell**
  
-  - `$env:SCRAPE_URL="https://wikipedia.org"`
+  -run `$env:SCRAPE_URL="https://wikipedia.org"`
 
 **for bash**
 
-  - `export SCRAPE_URL="https://wikipedia.org" `
+  - run `export SCRAPE_URL="https://wikipedia.org" `
 
 ### To run the scrape.js
-- `node scrape.js` 
+- run `node scrape.js` 
 
 ### To run the Flask server
- - `python server.py`
+ - run `python server.py`
 
+
+Once the full file setup has been done we can see that a new file has been created in our current working folder
+ named as **scraped_data.json** in json format that collect the headline and titile of the provided **url**. This 
+ scraped data will be rendered on our flask app server.
+
+ To see the result once you will run `pyhton server.py` a https link will be provided o your local machine click the link and see the scraped data in json format on your browser.
+
+ ## To create the Docker image
+  You should have the  `Dockerfile` which will be used to build the docker image on your system
+  - run `docker build -t scraper-server .` this command will build the image.
+  - run `docker run -p 5000:5000 -e SCRAPE_URL=https://wikipedia.org scraper-server` this command will run the container 
+  - -p 5000:5000 = maps the app to your local machine.
+     **-p stand as port**
+
+  - -e SCRAPE_URL=... tells it which website to scrape.
+     **-e stand for environmental variable**
