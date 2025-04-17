@@ -27,7 +27,7 @@ as **Docker Image**.
 
 ### To set the environmental variable
 
-     **for cmd**
+     1.for cmd
 
     - `set SCRAPE_URL=https://wikipedia.org`
 
@@ -36,7 +36,7 @@ as **Docker Image**.
     - `$env:SCRAPE_URL="https://wikipedia.org"`
 
     **for cmd**
-    
+
     - `export SCRAPE_URL="https://wikipedia.org" `
 
 ### To run the scrape.js
