@@ -8,8 +8,8 @@ as **Docker Image**.
 -  **A Flask Server** :-  That uses puppeteer to scrape a webpage.
 
 ## Project File Structure
---| `scrape.js`: Node.js script file to scrape the website headline and title.
---| `server.py`: Python Flask app to show the scraped data at the homepage ('/').
---| `package.json`: For puppeteer dependencies.
---| `requirements.txt`: For python flask dependencies.
---| `Dockerfile`: To build and run everything inside Docker.
+- --| `scrape.js`: Node.js script file to scrape the website headline and title.
+- --| `server.py`: Python Flask app to show the scraped data at the homepage ('/').
+- --| `package.json`: For puppeteer dependencies.
+- --| `requirements.txt`: For python flask dependencies.
+- --| `Dockerfile`: To build and run everything inside Docker.
