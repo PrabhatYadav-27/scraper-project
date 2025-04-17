@@ -61,3 +61,18 @@ Once the full file setup has been done we can see that a new file has been creat
 
   - -e SCRAPE_URL=... tells it which website to scrape.
      **-e stand for environmental variable**
+
+
+Check weather your conatainer is running or not
+- run `docker ps` to see all the running container on your system.
+
+once you verified that the container is running visit you browser and in your url type `https://localhost:5000`
+as we have expose the **port 5000** for the app. We will see the scraped headline and title of thr provided url in
+json format.
+
+## To stop  the container and remove the image 
+
+-run `docker ps` you will find the container name and its id
+-then run `docker stop id` this will stop the container.
+- to remove the image `docker rmi image-name` e.g scraper-server.
+
